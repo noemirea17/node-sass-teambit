@@ -31,6 +31,14 @@ button {
   cursor: pointer;
 }
 
+.margin_top_bottom {
+  margin: 50px 0;
+}
+
+.padding_top_bottom {
+  padding: 50px 0;
+}
+
 header {
   width: 100%;
   height: 10vh;
@@ -112,7 +120,6 @@ button img {
 
 .item_container {
   justify-content: space-around;
-  margin-top: 50px;
 }
 
 .item img {
@@ -122,9 +129,30 @@ button img {
 
 .item_bottom_container img {
   height: 250px;
-  margin: 50px 0;
 }
 
-.info_bottom {
+.row_img {
+  width: 50%;
+}
+
+.row_img img {
+  width: 100%;
+}
+
+.row_text {
+  width: 30%;
+}
+
+.row_text p:nth-child(2) {
   margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.row_text img {
+  height: 300px;
+  margin: 20px 30px;
+}
+
+.row.right {
+  justify-content: flex-end;
 }

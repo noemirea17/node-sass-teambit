@@ -11,23 +11,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <header class="flex">
-            <div class="logo">
-                <img src="img/logo.svg" alt="">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="">Solutions</a><i class="fas fa-chevron-down"></i></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Sign in</a></li>
-                    <li><a href=""><img src="img/google-logo.svg" alt=""> Sign Up</a> </li>
-                </ul>
-            </div>
-        </header>
-        <main>
-            <section class="jumbotron flex">
+    <!-- inizio header -->
+    <header class="flex container">
+        <div class="logo">
+            <img src="img/logo.svg" alt="">
+        </div>
+         <div class="menu">
+            <ul>
+                <li><a href="">Solutions</a><i class="fas fa-chevron-down"></i></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                 <li><a href="">Sign in</a></li>
+                 <li><a href=""><img src="img/google-logo.svg" alt=""> Sign Up</a> </li>
+            </ul>
+         </div>
+    </header>
+    
+    <!-- fine header -->
+    <!-- inizio main -->
+    <main>
+        <!-- inizio jumbotron -->
+        <section class="jumbotron">
+            <div class="container flex">
                 <div class="jumbo_text">
                     <h1>Understand, recognize and develop your people</h1>
                     <p>Teambit helps teams create a high performing culture with regular feedback.</p>
@@ -37,54 +42,90 @@
                 <div class="jumbo_img flex">
                     <img src="img/illustration-main.jpg" alt="">
                 </div>
-            </section>
-            <section class="info">
-                <div class="info_top">
-                    <h3>Traditional people processes lead to disengagement and turnover</h3>
-                    <div class="item_container flex">
-                        <div class="item">
-                            <img src="img/hardcore.png" alt="">
-                            <p>They are hardcore, formal and disconnected</p>
-                        </div>
-                        <div class="item">
-                            <img src="img/nofeedback.png" alt="">
-                            <p>They don't encourage regular feedback</p>
-                        </div>
-                        <div class="item">
-                            <img src="img/notsafe.png" alt="">
-                            <p>They don't make it safe to speak up</p>
-                        </div>   
+            </div>
+        </section>
+        <!-- fine jumbotron -->
+        <!-- inizio prima sezione -->
+        <section class="info">
+            <!-- info top -->
+            <div class="info_top padding_top_bottom container">
+                <h3>Traditional people processes lead to disengagement and turnover</h3>
+                <div class="item_container flex margin_top_bottom">
+                    <div class="item">
+                        <img src="img/hardcore.png" alt="">
+                        <p>They are hardcore, formal and disconnected</p>
                     </div>
-                    <div class="item_bottom_container">
-                        <img src="img/before.png" alt="">
+                    <div class="item">
+                        <img src="img/nofeedback.png" alt="">
+                        <p>They don't encourage regular feedback</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/notsafe.png" alt="">
+                        <p>They don't make it safe to speak up</p>
+                    </div>   
+                </div>
+                <div class="item_bottom_container margin_top_bottom">
+                    <img src="img/before.png" alt="">
+                </div>
+            </div>
+            <!-- info bottom -->
+            <div class="info_bottom padding_top_bottom container">
+                <h3>It doesn't have to be like that. Teambit is a modern solution that teammates love.</h3>
+                <div class="item_container flex margin_top_bottom">
+                    <div class="item">
+                        <img src="img/lightweight.png" alt="">
+                        <p>It's lightweight fun and interconnected</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/feedbacksuggestions.png" alt="">
+                        <p>It encourages regular feedback with contextual requests </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/safe.png" alt="">
+                        <p>It creates a safe environment for dialog</p>
+                    </div>   
+                </div>
+                <div class="item_bottom_container margin_top_bottom">
+                    <img src="img/after.png" alt="">
+                </div>
+                <h3>Here is how it works</h3>
+            </div>
+        </section>
+        <!-- fine prima sezione -->
+        <!-- inizio seconda sezione -->
+        <section>
+            <!-- prima riga -->
+            <div class="row flex margin_top_bottom">
+                <div class="row_img">
+                    <img src="img/employee-feedback.jpg" alt="">
+                </div>
+                <div class="row_text">
+                    <h3>Feedback to help teammates improve</h3>
+                    <p>Empower your teammates to know in real time what they are doing well and what they need to improve.</p>
+                    <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
+                    <div>
+                        <img src="img/communication.jpg" alt="">
                     </div>
                 </div>
-                <div class="info_bottom">
-                    <h3>It doesn't have to be like that. Teambit is a modern solution that teammates love.</h3>
-                    <div class="item_container flex">
-                        <div class="item">
-                            <img src="img/lightweight.png" alt="">
-                            <p>It's lightweight fun and interconnected</p>
-                        </div>
-                        <div class="item">
-                            <img src="img/feedbacksuggestions.png" alt="">
-                            <p>It encourages regular feedback with contextual requests </p>
-                        </div>
-                        <div class="item">
-                            <img src="img/safe.png" alt="">
-                            <p>It creates a safe environment for dialog</p>
-                        </div>   
+            </div>
+            <!-- seconda riga -->
+            <div class="row right flex margin_top_bottom">
+                <div class="row_text">
+                    <h3>Surveys to help the team be better</h3>
+                    <p>Get real-time insights into your team with research-backed, lightweight and regular surveys.</p>
+                    <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
+                    <div>
+                        <img src="img/insights.jpg" alt="">
                     </div>
-                    <div class="item_bottom_container">
-                        <img src="img/after.png" alt="">
-                    </div>
-                    <h3>Here is how it works</h3>
                 </div>
+                <div class="row_img">
+                    <img src="img/employee-survey.jpg" alt="">
 
-            </section>
-        </main>
-        <footer></footer>
-    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
     
 </body>
 </html>
