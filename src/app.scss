@@ -9,3 +9,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+// mobile Phone
+@media screen and(max-width:768px) {
+  .ms_jumbotron,
+  .row_text {
+    width: 100%;
+    text-align: center;
+  }
+  .footer_left {
+    width: 100%;
+  }
+}

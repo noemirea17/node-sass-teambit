@@ -7,42 +7,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/app.css">
     <title>Document</title>
 </head>
 <body>
     <!-- inizio header -->
-    <header class="flex container">
-        <div class="logo">
-            <img src="img/TB_logo.png" alt="">
+    <header>
+        <div class="flex ms_container header_container">
+
+            <div class="logo">
+                <img src="img/TB_logo.png" alt="">
+            </div>
+            <div class="menu_small visible-xs hidden-sm hidden-md hidden-lg">
+                <i class="fas fa-bars"></i>
+            </div>
+             <div class="menu hidden-xs">
+                <ul>
+                    <li><a href="">Solutions</a><i class="fas fa-chevron-down"></i></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Blog</a></li>
+                     <li><a href="">Sign in</a></li>
+                     <li><a href="" class="fake_btn"><img src="img/google-logo.svg" alt=""> Sign Up</a> </li>
+                </ul>
+             </div>
         </div>
-         <div class="menu">
-            <ul>
-                <li><a href="">Solutions</a><i class="fas fa-chevron-down"></i></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Blog</a></li>
-                 <li><a href="">Sign in</a></li>
-                 <li><a href="" class="fake_btn"><img src="img/google-logo.svg" alt=""> Sign Up</a> </li>
-            </ul>
-         </div>
     </header>
     
     <!-- fine header -->
     <!-- inizio main -->
     <main>
         <!-- inizio jumbotron -->
-        <section class="jumbotron">
-            <div class="container flex">
-                <div class="jumbo_text">
-                    <h1>Understand, recognize and develop your people</h1>
-                    <p>Teambit helps teams create a high performing culture with regular feedback.</p>
-                    <div class="signButtons">
-                        <button> <img src="img/google-logo.svg" alt="">Sign up with Google</button> or <button> <img src="img/slack-logo.svg" alt="">Sign up with Slack</button>
-                        <p><a href="">or use your email address <i class="fas fa-arrow-right"></i></a> </p>
+        <section class="ms_jumbotron">
+            <div class="ms_container">
+                <div class="row">
+                    <div class="jumbo_text col-xs-12 col-sm-6 col-md-6">
+                        <h1>Understand, recognize and develop your people</h1>
+                        <p>Teambit helps teams create a high performing culture with regular feedback.</p>
+                        <div class="signButtons">
+                            <button> <img src="img/google-logo.svg" alt="">Sign up with Google</button> or <button> <img src="img/slack-logo.svg" alt="">Sign up with Slack</button>
+                            <p><a href="">or use your email address <i class="fas fa-arrow-right"></i></a> </p>
+                        </div>
                     </div>
-                </div>
-                <div class="jumbo_img flex">
-                    <img src="img/illustration-main.jpg" alt="">
+                    <div class="jumbo_img col-xs-12 col-sm-6 col-md-6">
+                        <img src="img/illustration-main.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,45 +59,53 @@
         <!-- inizio prima sezione -->
         <section id="info">
             <!-- info top -->
-            <div class="info_top padding_top_bottom container">
+            <div class="info_top padding_top_bottom ms_container">
                 <h3>Traditional people processes lead to disengagement and turnover</h3>
-                <div class="item_container flex margin_top_bottom">
-                    <div class="item">
-                        <img src="img/hardcore.png" alt="">
-                        <p>They are hardcore, formal and disconnected</p>
+                <div class="row">
+                    <div class="item_container margin_top_bottom">
+                        <div class="item col-xs-12 col-sm-4 col-md-4">
+                            <img src="img/hardcore.png" alt="">
+                            <p>They are hardcore, formal and disconnected</p>
+                        </div>
+                        <div class="item col-xs-12 col-sm-4 col-md-4">
+                            <img src="img/nofeedback.png" alt="">
+                            <p>They don't encourage regular feedback</p>
+                        </div>
+                        <div class="item col-xs-12 col-sm-4 col-md-4">
+                            <img src="img/notsafe.png" alt="">
+                            <p>They don't make it safe to speak up</p>
+                        </div>   
                     </div>
-                    <div class="item">
-                        <img src="img/nofeedback.png" alt="">
-                        <p>They don't encourage regular feedback</p>
-                    </div>
-                    <div class="item">
-                        <img src="img/notsafe.png" alt="">
-                        <p>They don't make it safe to speak up</p>
-                    </div>   
                 </div>
-                <div class="item_bottom_container margin_top_bottom">
-                    <img src="img/before.png" alt="">
+                <div class="row">
+                    <div class="item_bottom_container margin_top_bottom col-xs-12">
+                        <img src="img/before.png" alt="">
+                    </div>
                 </div>
             </div>
             <!-- info bottom -->
-            <div class="info_bottom padding_top_bottom container">
+            <div class="info_bottom padding_top_bottom ms_container">
                 <h3>It doesn't have to be like that. Teambit is a modern solution that teammates love.</h3>
-                <div class="item_container flex margin_top_bottom">
-                    <div class="item">
-                        <img src="img/lightweight.png" alt="">
-                        <p>It's lightweight fun and interconnected</p>
+                <div class="row">
+                    <div class="item_container margin_top_bottom">
+                        <div class="item col-xs-12 col-sm-4 col-md-4">
+                            <img src="img/lightweight.png" alt="">
+                            <p>It's lightweight fun and interconnected</p>
+                        </div>
+                        <div class="item col-xs-12 col-sm-4 col-md-4">
+                            <img src="img/feedbacksuggestions.png" alt="">
+                            <p>It encourages regular feedback with contextual requests </p>
+                        </div>
+                        <div class="item col-xs-12 col-sm-4 col-md-4">
+                            <img src="img/safe.png" alt="">
+                            <p>It creates a safe environment for dialog</p>
+                        </div>   
                     </div>
-                    <div class="item">
-                        <img src="img/feedbacksuggestions.png" alt="">
-                        <p>It encourages regular feedback with contextual requests </p>
-                    </div>
-                    <div class="item">
-                        <img src="img/safe.png" alt="">
-                        <p>It creates a safe environment for dialog</p>
-                    </div>   
                 </div>
-                <div class="item_bottom_container margin_top_bottom">
-                    <img src="img/after.png" alt="">
+                <div class="row">
+                    <div class="item_bottom_container margin_top_bottom col-xs-12">
+                        <img src="img/after.png" alt="">
+                    </div>
                 </div>
                 <h3>Here is how it works</h3>
             </div>
@@ -97,58 +114,67 @@
         <!-- inizio seconda sezione -->
         <section>
             <!-- prima riga -->
-            <div class="row flex margin_top_bottom">
-                <div class="row_img">
+            <div class="row margin_top_bottom">
+                <div class="row_img col-xs-12 col-sm-6">
                     <img src="img/employee-feedback.jpg" alt="">
                 </div>
-                <div class="row_text">
-                    <h3>Feedback to help teammates improve</h3>
-                    <p>Empower your teammates to know in real time what they are doing well and what they need to improve.</p>
-                    <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
-                    <div>
-                        <img src="img/communication.jpg" alt="">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="row_text">
+                        <h3>Feedback to help teammates improve</h3>
+                        <p>Empower your teammates to know in real time what they are doing well and what they need to improve.</p>
+                        <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
+                        <div>
+                            <img src="img/communication.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- seconda riga -->
-            <div class="row right flex margin_top_bottom">
-                <div class="row_text">
-                    <h3>Surveys to help the team be better</h3>
-                    <p>Get real-time insights into your team with research-backed, lightweight and regular surveys.</p>
-                    <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
-                    <div>
-                        <img src="img/insights.jpg" alt="">
+            <div class="row right margin_top_bottom">
+                <div class="flex col-xs-12 col-sm-6">
+                    <div class="row_text">
+                        <h3>Surveys to help the team be better</h3>
+                        <p>Get real-time insights into your team with research-backed, lightweight and regular surveys.</p>
+                        <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
+                        <div>
+                            <img src="img/insights.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="row_img">
+                <div class="row_img col-xs-12 col-sm-6">
                     <img src="img/employee-survey.jpg" alt="">
                 </div>
             </div>
             <!-- terza riga -->
-            <div class="row flex margin_top_bottom">
-                <div class="row_img">
+            <div class="row margin_top_bottom">
+                <div class="row_img col-xs-12 col-sm-6">
                     <img src="img/performance-review.jpg" alt="">
                 </div>
-                <div class="row_text">
-                    <h3>Reviews to help teammates get a fair evaluation</h3>
-                    <p>Make a better compensation and promotion decisions with objective and quick performance reviews.</p>
-                    <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
-                    <div>
-                        <img src="img/review.jpg" alt="">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="row_text">
+                        <h3>Reviews to help teammates get a fair evaluation</h3>
+                        <p>Make a better compensation and promotion decisions with objective and quick performance reviews.</p>
+                        <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
+                        <div>
+                            <img src="img/review.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- quarta riga -->
-            <div class="row right flex margin_top_bottom">
-                <div class="row_text">
-                    <h3>Praise to help teammates feel valued</h3>
-                    <p>Make it a habit to recognize and praise people who do great work.</p>
-                    <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
-                    <div>
-                        <img src="img/recognition.jpg" alt="">
+            <div class="row right margin_top_bottom">
+                <div class="flex col-xs-12 col-sm-6">
+                    <div class="row_text">
+                        <h3>Praise to help teammates feel valued</h3>
+                        <p>Make it a habit to recognize and praise people who do great work.</p>
+                        <p><a href="">Learn more <i class="fas fa-arrow-right"></i></a> </p>
+                        <div>
+                            <img src="img/recognition.jpg" alt="">
+                        </div>
+
                     </div>
                 </div>
-                <div class="row_img">
+                <div class="row_img col-xs-12 col-sm-6">
                     <img src="img/employee-recognition.jpg" alt="">
                 </div>
             </div>
@@ -161,25 +187,27 @@
                 <h2>Get started in seconds</h2>
                 <img src="img/happy.svg" alt="">
             </div>
-            <div class="started_text">
-                <i class="fas fa-quote-left"></i>
-                <p>We are experiencing what Gallup calls 'an employee engagement crisis'. Just one-third of people at work are engaged.</p>
-                <p>To improve performance and engagement companies rely on the same principles as industria-age factories. But all those annual performance reviews and hundred-question surveys don't work anymore. People want regular feedback. Leaders who don't embrace this change end up with misaligned, disengaged and dwindling team.</p>
-                <p>We designed Teambit to change that. it empowers teams to make feedback a daily habit. Everybody knows what they are doing well and what they need to improve, leading to better performing, engaged and happier teams. </p>
-                <p>We are on a mission to make worklife exciting. Come join us.</p>
-                <div class="started_btm">
-                    <img src="img/alex.png" alt="">
-                    <img src="img/bohdan.png" alt="">
-
-                </div>
-                <div class="started_btm">
-                    <span>Alex and Bohdan</span>
-                    <p>Co-Founders at Teambit</p>
+            <div class="row flex">
+                <div class="started_text col-xs-12">
+                    <i class="fas fa-quote-left"></i>
+                    <p>We are experiencing what Gallup calls 'an employee engagement crisis'. Just one-third of people at work are engaged.</p>
+                    <p>To improve performance and engagement companies rely on the same principles as industria-age factories. But all those annual performance reviews and hundred-question surveys don't work anymore. People want regular feedback. Leaders who don't embrace this change end up with misaligned, disengaged and dwindling team.</p>
+                    <p>We designed Teambit to change that. it empowers teams to make feedback a daily habit. Everybody knows what they are doing well and what they need to improve, leading to better performing, engaged and happier teams. </p>
+                    <p>We are on a mission to make worklife exciting. Come join us.</p>
+                    <div class="started_btm">
+                        <img src="img/alex.png" alt="">
+                        <img src="img/bohdan.png" alt="">
+    
+                    </div>
+                    <div class="started_btm">
+                        <span>Alex and Bohdan</span>
+                        <p>Co-Founders at Teambit</p>
+                    </div>
                 </div>
             </div>
             <div class="signButtons center">
                 <button> <img src="img/google-logo.svg" alt="">Sign up with Google</button> or <button> <img src="img/slack-logo.svg" alt="">Sign up with Slack</button>
-                    <p><a href="">or use your email address <i class="fas fa-arrow-right"></i></a> </p>
+                <p><a href="">or use your email address <i class="fas fa-arrow-right"></i></a> </p>
             </div>
         </section>
         <!-- fine terza sezione -->
@@ -187,58 +215,72 @@
     <!-- fine main -->
     <!-- inizio footer -->
     <footer class="margin_top_bottom">
-        <div class="container flex">
-            <div class="footer_left flex">
-                <img src="img/logo-small.svg" alt="">
+        <div class="ms_container">
+            <div class="footer_left flex col-xs-12 col-sm-4">
+                <img src="img/TB_logo_small.png" alt="">
                 <p><span>Teambit</span> helps teams create high performing cultures by making feedback a daily habit</p>
             </div>
-            <div class="footer_col">
-                <h3>Product</h3>
-                <ul>
-                    <li> <a href="">Feeack</a> </li>
-                    <li> <a href="">Surveys</a> </li>
-                    <li> <a href="">Reviews</a> </li>
-                    <li> <a href="">Praise</a> </li>
-                    <li> <a href="">Slack Integration</a> </li>
-                    <li> <a href="">Schedule a demo</a> </li>
-                    <li> <a href="">Pricing</a> </li>
-                </ul>
-            </div>
-            <div class="footer_col">
-                <h3>About</h3>
-                <ul>
-                    <li> <a href="">Feeack</a> </li>
-                    <li> <a href="">Surveys</a> </li>
-                    <li> <a href="">Reviews</a> </li>
-                    <li> <a href="">Praise</a> </li>
-                </ul>
-            </div>
-            <div class="footer_col">
-                <h3>Connect</h3>
-                <ul>
-                    <li> <a href="">Feeack</a> </li>
-                    <li> <a href="">Surveys</a> </li>
-                    <li> <a href="">Reviews</a> </li>
-                    <li> <a href="">Praise</a> </li>
-                </ul>
-            </div>
-            <div class="footer_col">
-                <h3>Lobs</h3>
-                <ul>
-                    <li> <a href="">Feeack</a> </li>
-                    <li> <a href="">Surveys</a> </li>
-                    <li> <a href="">Reviews</a> </li>
-                    <li> <a href="">Praise</a> </li>
-                </ul>
-            </div>
-            <div class="footer_col">
-                <h3>From the blog</h3>
-                <ul>
-                    <li> <a href="">How to change your company culture: a four step framework</a></li>
-                    <li><a href="">How teams can be more productive by killing 8-hour workday</a></li>
-                    <li><a href="">How to build high performing teams inspired by nature</a></li>
-                    <li><a href="">View all</a></li>
-                </ul>
+            <div class="footer_right col-xs-12 col-sm-8">
+                <div class=" col-xs-12 col-sm-6">
+                    <div class="row flex">
+                        <div class="footer_col ">
+                            <h3>Product</h3>
+                            <ul>
+                                <li> <a href="">Feeack</a> </li>
+                                <li> <a href="">Surveys</a> </li>
+                                <li> <a href="">Reviews</a> </li>
+                                <li> <a href="">Praise</a> </li>
+                                <li> <a href="">Slack Integration</a> </li>
+                                <li> <a href="">Schedule a demo</a> </li>
+                                <li> <a href="">Pricing</a> </li>
+                            </ul>
+                        </div>
+                        <div class="footer_col">
+                            <h3>About</h3>
+                            <ul>
+                                <li> <a href="">Feeack</a> </li>
+                                <li> <a href="">Surveys</a> </li>
+                                <li> <a href="">Reviews</a> </li>
+                                <li> <a href="">Praise</a> </li>
+                            </ul>
+                        </div>
+                        <div class="footer_col">
+                            <h3>Connect</h3>
+                            <ul>
+                                <li> <a href="">Feeack</a> </li>
+                                <li> <a href="">Surveys</a> </li>
+                                <li> <a href="">Reviews</a> </li>
+                                <li> <a href="">Praise</a> </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="row flex">
+                        <div class="footer_col">
+                            <h3>Lobs</h3>
+                            <ul>
+                                <li> <a href="">Feeack</a> </li>
+                                <li> <a href="">Surveys</a> </li>
+                                <li> <a href="">Reviews</a> </li>
+                                <li> <a href="">Praise</a> </li>
+                            </ul>
+                        </div>
+                        <div class="footer_col">
+                            <h3>From the blog</h3>
+                            <ul>
+                                <li> <a href="">How to change your company culture: a four step framework</a></li>
+                                <li><a href="">How teams can be more productive by killing 8-hour workday</a></li>
+                                <li><a href="">How to build high performing teams inspired by nature</a></li>
+                                <li><a href="">View all</a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+
+                </div>
+
             </div>
 
         </div>

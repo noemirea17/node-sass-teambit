@@ -14,8 +14,12 @@
   }
 }
 
+.footer_right .row {
+  justify-content: space-around;
+}
+
 .footer_col {
-  width: calc(100% / 5);
+  padding: 0 10px;
   color: $fontcolor;
   li {
     display: list-item;

@@ -1,5 +1,5 @@
 // jumbotron
-.jumbotron {
+.ms_jumbotron {
   width: 100%;
   padding: 50px 0;
   color: $fontcolor;
@@ -7,7 +7,6 @@
 // jumbo text
 
 .jumbo_text {
-  width: 50%;
   h1 {
     font-size: 2.3em;
     padding: 5px 0;
@@ -41,12 +40,8 @@
 
 // jumbo img
 
-.jumbo_img {
-  justify-content: flex-end;
-  width: 50%;
-  img {
-    width: 100%;
-  }
+.jumbo_img img {
+  width: 100%;
 }
 
 // fine jumbotron
@@ -77,28 +72,24 @@
 
 // section 2
 
-.row_img {
-  width: 50%;
-  img {
-    width: 100%;
-  }
+.row_img img {
+  width: 100%;
 }
 
+.row.right .flex {
+  justify-content: flex-end;
+}
 .row_text {
+  width: 50%;
   color: $fontcolor;
-  width: 30%;
   p:nth-child(2) {
     margin-top: 50px;
     margin-bottom: 30px;
   }
   img {
-    height: 300px;
+    width: 80%;
     margin: 20px 30px;
   }
-}
-
-.row.right {
-  justify-content: flex-end;
 }
 
 // section 3
@@ -118,6 +109,9 @@
   }
   h2 {
     margin: 15px;
+  }
+  .row.flex {
+    justify-content: center;
   }
 }
 

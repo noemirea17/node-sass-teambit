@@ -1,9 +1,14 @@
 header {
   width: 100%;
   height: 10vh;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid $fontcolor;
+  .header_container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    height: 60px;
+  }
   li {
     display: inline;
   }
@@ -14,6 +19,11 @@ header {
       height: 20px;
     }
   }
+}
+
+.menu_small {
+  font-size: 2em;
+  color: $fontcolor;
 }
 
 .fake_btn {
