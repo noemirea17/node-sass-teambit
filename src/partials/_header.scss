@@ -4,20 +4,25 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #58402c;
+  li {
+    display: inline;
+  }
+  a {
+    padding: 10px;
+    color: black;
+    img {
+      height: 20px;
+    }
+  }
 }
 
-ul li a {
-  padding: 10px;
-  color: black;
-}
-
-ul li:last-of-type a {
+.fake_btn {
   border: 1px solid #2c4792;
   border-radius: 10px;
   padding: 10px;
   color: #2c4792;
-}
-
-li a img {
-  height: 20px;
+  &:hover {
+    background-color: $buttonBkg;
+    color: white;
+  }
 }

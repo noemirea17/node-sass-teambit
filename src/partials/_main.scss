@@ -19,18 +19,22 @@
 }
 
 // buttons
-
-button {
-  background-color: $buttonBkg;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  padding: 5px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  border-color: $buttonBkg;
+.signButtons {
+  button {
+    background-color: $buttonBkg;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-color: $buttonBkg;
+  }
   img {
     height: 15px;
+  }
+  a {
+    color: #58402c;
   }
 }
 
@@ -47,7 +51,7 @@ button {
 // fine jumbotron
 
 // sezione 1
-.info {
+#info {
   width: 100%;
   padding: 30px 0;
   background-color: $pinkBkg;
@@ -93,4 +97,61 @@ button {
 
 .row.right {
   justify-content: flex-end;
+}
+
+// section 3
+
+#getStarted {
+  width: 100%;
+  background-color: $pinkBkg;
+  .started_title {
+    text-align: center;
+    margin-bottom: 40px;
+    h2:nth-child(2) {
+      display: inline;
+    }
+    img {
+      height: 30px;
+    }
+  }
+  h2 {
+    margin: 15px;
+  }
+}
+
+.started_text {
+  position: relative;
+  width: 60%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid $blueBorder;
+  i {
+    font-size: 2.3em;
+    color: $blueBorder;
+    position: absolute;
+    top: -15px;
+    left: -5px;
+  }
+  p {
+    margin: 20px 0;
+  }
+  .started_btm {
+    display: inline-block;
+    img {
+      height: 50px;
+      margin: 0 10px;
+    }
+    span {
+      color: $blueBorder;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.signButtons.center {
+  text-align: center;
 }

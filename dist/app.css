@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #58402c;
@@ -20,7 +14,6 @@ a {
 
 ul li {
   list-style: none;
-  display: inline;
 }
 
 .flex {
@@ -46,21 +39,26 @@ header {
   align-items: center;
   border-bottom: 1px solid #58402c;
 }
-
-ul li a {
+header li {
+  display: inline;
+}
+header a {
   padding: 10px;
   color: black;
 }
+header a img {
+  height: 20px;
+}
 
-ul li:last-of-type a {
+.fake_btn {
   border: 1px solid #2c4792;
   border-radius: 10px;
   padding: 10px;
   color: #2c4792;
 }
-
-li a img {
-  height: 20px;
+.fake_btn:hover {
+  background-color: #2c4792;
+  color: white;
 }
 
 .jumbotron {
@@ -81,7 +79,7 @@ li a img {
   margin: 10px 0;
 }
 
-button {
+.signButtons button {
   background-color: #2c4792;
   color: white;
   font-weight: bold;
@@ -91,8 +89,11 @@ button {
   margin-bottom: 20px;
   border-color: #2c4792;
 }
-button img {
+.signButtons img {
   height: 15px;
+}
+.signButtons a {
+  color: #58402c;
 }
 
 .jumbo_img {
@@ -103,13 +104,13 @@ button img {
   width: 100%;
 }
 
-.info {
+#info {
   width: 100%;
   padding: 30px 0;
   background-color: #ffe7d2;
   text-align: center;
 }
-.info .info_top {
+#info .info_top {
   border-bottom: 1px solid #58402c;
 }
 
@@ -147,4 +148,96 @@ button img {
 
 .row.right {
   justify-content: flex-end;
+}
+
+#getStarted {
+  width: 100%;
+  background-color: #ffe7d2;
+}
+#getStarted .started_title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#getStarted .started_title h2:nth-child(2) {
+  display: inline;
+}
+#getStarted .started_title img {
+  height: 30px;
+}
+#getStarted h2 {
+  margin: 15px;
+}
+
+.started_text {
+  position: relative;
+  width: 60%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1111a1;
+}
+.started_text i {
+  font-size: 2.3em;
+  color: #1111a1;
+  position: absolute;
+  top: -15px;
+  left: -5px;
+}
+.started_text p {
+  margin: 20px 0;
+}
+.started_text .started_btm {
+  display: inline-block;
+}
+.started_text .started_btm img {
+  height: 50px;
+  margin: 0 10px;
+}
+.started_text .started_btm span {
+  color: #1111a1;
+}
+.started_text .started_btm p {
+  margin: 0;
+}
+
+.signButtons.center {
+  text-align: center;
+}
+
+.footer_left {
+  width: 30%;
+}
+.footer_left img {
+  height: 50px;
+  margin: 0 10px;
+}
+.footer_left span {
+  color: #1111a1;
+  font-size: 0.8em;
+}
+.footer_left p {
+  font-weight: bold;
+}
+
+.footer_col {
+  width: calc(100% / 5);
+}
+.footer_col li {
+  display: list-item;
+}
+.footer_col h3 {
+  margin-bottom: 20px;
+}
+.footer_col a {
+  color: #58402c;
+}
+.footer_col a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
