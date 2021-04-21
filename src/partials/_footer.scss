@@ -1,5 +1,6 @@
 .footer_left {
   width: 30%;
+  color: $fontcolor;
   img {
     height: 50px;
     margin: 0 10px;
@@ -15,6 +16,7 @@
 
 .footer_col {
   width: calc(100% / 5);
+  color: $fontcolor;
   li {
     display: list-item;
   }
@@ -22,7 +24,7 @@
     margin-bottom: 20px;
   }
   a {
-    color: #58402c;
+    color: $fontcolor;
     &:hover {
       text-decoration: underline;
     }

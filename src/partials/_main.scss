@@ -2,6 +2,7 @@
 .jumbotron {
   width: 100%;
   padding: 50px 0;
+  color: $fontcolor;
 }
 // jumbo text
 
@@ -34,7 +35,7 @@
     height: 15px;
   }
   a {
-    color: #58402c;
+    color: $fontcolor;
   }
 }
 
@@ -57,7 +58,7 @@
   background-color: $pinkBkg;
   text-align: center;
   .info_top {
-    border-bottom: 1px solid #58402c;
+    border-bottom: 1px solid $fontcolor;
   }
 }
 
@@ -84,6 +85,7 @@
 }
 
 .row_text {
+  color: $fontcolor;
   width: 30%;
   p:nth-child(2) {
     margin-top: 50px;
@@ -123,6 +125,7 @@
   position: relative;
   width: 60%;
   background-color: white;
+  color: $fontcolor;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
@@ -154,4 +157,7 @@
 
 .signButtons.center {
   text-align: center;
+  a {
+    color: white;
+  }
 }
